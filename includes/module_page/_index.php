@@ -259,6 +259,16 @@ include '../includes/header.php';
                 echo $tool_text;
                 ?>
             </div>
+            <div class="module-example mt-5">
+                <h2 id="example-usage" class="ms-n3"><i class=" far fa-code fa-fw"></i> Example usage
+                    <a href="#example-usage" class="header-link scroll_to_link"><span class="fas fa-link" aria-hidden="true"></span></a>
+                </h2>
+                <pre><code class="language-groovy"><?php
+                                                    $urlname = str_replace('_', '/', $module['name']);
+                                                    $code = file_get_contents('https://raw.githubusercontent.com/nf-core/modules/master/tests/modules/nf-core/' . $urlname . '/main.nf');
+                                                    echo $code;
+                                                    ?></code></pre>
+            </div>
         </div>
     </div>
 
